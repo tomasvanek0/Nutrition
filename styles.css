@@ -1,3 +1,6 @@
+body{
+    margin:0;
+}
 
 .Navbar{
     width: 100%;
@@ -8,23 +11,38 @@
 
 .logo{
     width: 25%;
+    position: relative;
+    margin: 10px 0 0 0;
+}
+
+.logo img{
+    width: 40%;
+    height: auto;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
 .elements{
     width: 50%;
+    margin: 10px 0 0 0;
+
 }
 
+
+
 .nav-links{
-    width: 100%;
+    width: 90%;
     background-color: white;
     display: flex;
-    justify-content: space-between;
-    text-decoration: none;
+    justify-content: space-evenly;
+    padding: 0 10px 0 10px;
+    list-style: none;
 
 }
 .nav-link{
-    text-decoration: none;
     color: black;
     font-size: 24px;
 
@@ -33,10 +51,13 @@
 
 .cart{
     width: 25%;
+    margin: 10px 0 0 0;
 }
 
 .Nadpis{
     text-align: center;
+    position: relative;
+    margin-top: 80px;
 }
 
 .Nadpis h1{
@@ -44,4 +65,21 @@
 }
 .Nadpis p{
     font-size: 32px;
+}
+
+.select{
+    width: 15%;
+    height: 40px;
+    position: absolute;
+    left: 10%;
+}
+
+.products{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.product img{
+    width: 75%;
 }
