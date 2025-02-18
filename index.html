@@ -2,86 +2,139 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-  <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Title</title>
 </head>
 <body>
-    <header>
-        <div class="Navbar">
-            <div class="logo">
-                <img src="images/logo-image.png" alt="logo">
+    <main>
+        <header>
+            <div class="Navbar">
+                <div class="logo">
+                    <img src="images/logo-image.png" alt="logo">
+                </div>
+                <div class="elements">
+                    <nav>
+                        <ul class="nav-links">
+                            <li class="nav-link">Home</li>
+                            <li class="nav-link">About me</li>
+                            <li class="nav-link">Pages</li>
+                            <li class="nav-link">Contact</li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="cart">
+                    <img src="images/cart.jpg" alt="košík">
+                    <button class="nav-button" id="nav-btn">BOOK AN APPOINTMENT</button>
+                </div>
             </div>
-            <div class="elements">
-                <nav>
-                    <ul class="nav-links">
-                        <li class="nav-link">Home</li>
-                        <li class="nav-link">About me</li>
-                        <li class="nav-link">Pages</li>
-                        <li class="nav-link">Contact</li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="cart">
-                <img src="images/cart.jpg" alt="košík">
-                <button class="nav-button" id="nav-btn">BOOK AN APPOINTMENT</button>
-            </div>
+        </header>
+        <div class="Nadpis">
+            <h1>Shop</h1>
+            <p>Sample text. Click to select the Text Element. Sollicitudin duis erat nisi porttitor litora massa.</p>
+            <select class="select">
+                <option>All</option>
+                <option>Featured</option>
+                <option>Accessories</option>
+            </select>
         </div>
-    </header>
-    <div class="Nadpis">
-        <h1>Shop</h1>
-        <p>Sample text. Click to select the Text Element. Sollicitudin duis erat nisi porttitor litora massa.</p>
-        <select class="select">
-            <option>All</option>
-            <option>Featured</option>
-            <option>Accessories</option>
-        </select>
-    </div>
 
-    <div class="products">
-            <div class="product">
-                <img src="images/002.jpg" alt="snídaně">
-                <h2 class="h2">Healthy Breakfast</h2>
-                <div class="h3-no-sale"><h3 class="h3">$18.00</h3></div>
-                <button class="product-btn">ADD TO CART</button>
+        <div class="products">
+                <div class="product">
+                    <img src="images/002.jpg" alt="snídaně">
+                    <h2 class="h2">Healthy Breakfast</h2>
+                    <div class="h3-no-sale"><h3 class="h3">$18.00</h3></div>
+                    <button class="product-btn">ADD TO CART</button>
+                </div>
+                <div class="product">
+                    <img src="images/001.jpg" alt="weight">
+                    <h2 class="h2">Weight Loss</h2>
+                    <div class="h3-text"><h3 class="h3">$29.00</h3></div>
+                    <div class="h4-sale"><h4 class="h4">$44.00</h4></div>
+                    <button class="product-btn">ADD TO CART</button>
+                </div>
+                <div class="product">
+                    <img src="images/67.jpg" alt="grilování">
+                    <h2 class="h2">Grilled Vegetables</h2>
+                    <div class="h3-text"><h3 class="h3">$15.00</h3></div>
+                    <div class="h4-sale"><h4 class="h4">$22.00</h4></div>
+                    <button class="product-btn">ADD TO CART</button>
+                </div>
+            <div class="products2">
+                <div class="product">
+                    <img src="images/09.jpg" alt="ovoce">
+                    <h2 class="h2">Fruit Mix</h2>
+                    <div class="h3-no-sale"><h3 class="h3">$24.00</h3></div>
+                    <div class="h4-sale"><h4 class="h4">$30.00</h4></div>
+                    <button class="product-btn">ADD TO CART</button>
+                </div>
+                <div class="product">
+                    <img src="images/book-new2-min.png" alt="kniha">
+                    <h2 class="h2">The Nutrition Book</h2>
+                    <div class="h3-text"><h3 class="h3">$19.00</h3></div>
+                    <div class="h4-sale"><h4 class="h4">$25.00</h4></div>
+                    <button class="product-btn">ADD TO CART</button>
+                </div>
+                <div class="product">
+                    <img src="images/11.jpg" alt="protein">
+                    <h2 class="h2">Best Protein Shakes</h2>
+                    <div class="h3-text"><h3 class="h3">$17.00</h3></div>
+                    <div class="h4-sale"><h4 class="h4">$20.00</h4></div>
+                    <button class="product-btn">ADD TO CART</button>
+                </div>
             </div>
-            <div class="product">
-                <img src="images/001.jpg" alt="weight">
-                <h2 class="h2">Weight Loss</h2>
-                <div class="h3-text"><h3 class="h3">$29.00</h3></div>
-                <div class="h4-sale"><h4 class="h4">$44.00</h4></div>
-                <button class="product-btn">ADD TO CART</button>
+        </div>
+
+
+        <div class="down-side">
+            <img src="images/book-new-2-min.png" alt="kniha">
+            <h2 class="down-h2">Get Free eBook!</h2>
+            <p class="down-p">Do you want to have sustained energy, freedom from hunger<br> and cravings and reduce your risk of illness? Get my FREE eBook<br> here.</p>
+            <input type="email" placeholder="Email" id="email2">
+            <button class="nav-button" id="btn1">Subscribe</button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="images/logo-3.png" alt="logo">
+            <div class="social-icons">
+                    <i class="fa fa-facebook-f"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-twitter"></i>
             </div>
-            <div class="product">
-                <img src="images/67.jpg" alt="grilování">
-                <h2 class="h2">Grilled Vegetables</h2>
-                <div class="h3-text"><h3 class="h3">$15.00</h3></div>
-                <div class="h4-sale"><h4 class="h4">$22.00</h4></div>
-                <button class="product-btn">ADD TO CART</button>
-            </div>
-    </div>
-    <div class="products2">
-        <div class="product">
-            <img src="images/09.jpg" alt="ovoce">
-            <h2 class="h2">Fruit Mix</h2>
-            <div class="h3-no-sale"><h3 class="h3">$24.00</h3></div>
-            <div class="h4-sale"><h4 class="h4">$30.00</h4></div>
-            <button class="product-btn">ADD TO CART</button>
         </div>
-        <div class="product">
-            <img src="images/book-new2-min.png" alt="kniha">
-            <h2 class="h2">The Nutrition Book</h2>
-            <div class="h3-text"><h3 class="h3">$19.00</h3></div>
-            <div class="h4-sale"><h4 class="h4">$25.00</h4></div>
-            <button class="product-btn">ADD TO CART</button>
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li>About Me</li>
+                <li>Consultation</li>
+                <li>My Blog</li>
+                <li>Books</li>
+            </ul>
         </div>
-        <div class="product">
-            <img src="images/11.jpg" alt="protein">
-            <h2 class="h2">Best Protein Shakes</h2>
-            <div class="h3-text"><h3 class="h3">$17.00</h3></div>
-            <div class="h4-sale"><h4 class="h4">$20.00</h4></div>
-            <button class="product-btn">ADD TO CART</button>
+
+        <div class="footer-services">
+            <h3>Our Services</h3>
+            <ul>
+                <li>Support & Motivation</li>
+                <li>Weight Loss Programs</li>
+                <li>Personalized Nutrition</li>
+                <li>Healthy Daily Life</li>
+                <li>Balance Body & Mind</li>
+            </ul>
         </div>
-    </div>
+
+        <div class="footer-newsletter">
+            <h3>Newsletter</h3>
+            <form action="#" method="post">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter a valid email address" required>
+                <button type="submit">SUBMIT</button>
+            </form>
+        </div>
+    </footer>
 </body>
 
 </html>

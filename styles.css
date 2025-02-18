@@ -23,6 +23,16 @@
 
 }
 
+.nav-button:hover{
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
+
+body{
+    height: 2500px;
+}
+
 
 
 
@@ -102,6 +112,12 @@ body{
     transform: translate(-50%, -50%);
 }
 
+#nav-btn:hover{
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
+
 .Nadpis{
     text-align: center;
     position: relative;
@@ -136,13 +152,13 @@ body{
 }
 
 .products2{
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     margin: 20px 0 80px 0;
     position: absolute;
     left: 50%;
-    top: 180%;
+    top: 200%;
     transform: translate(-50%, -50%);
 }
 .product{
@@ -186,6 +202,166 @@ body{
     cursor: pointer;
 
 }
+
+.down-side{
+    background-color: #344742;
+    width: 100%;
+    height: 65%;
+    position: absolute;
+    top: 250%;
+
+}
+
+.down-side img{
+    width: 20%;
+    height: auto;
+    position: absolute;
+    left: 40%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+
+}
+
+.down-side p{
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    color: white;
+
+}
+
+.down-h2{
+    position: absolute;
+    top: 35%;
+    left: 60%;
+    color:white;
+    font-size: 32px;
+    font-weight: bold;
+
+}
+
+#email2{
+    position: absolute;
+    width: 15%;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    top: 70%;
+    left: 60%;
+}
+
+#btn1{
+    position: absolute;
+    width: 8%;
+    top: 70%;
+    left: 77%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2b3130;
+    color: #fff;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    width: 95.25%;
+    top: 310%;
+}
+
+.footer-logo{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+/* Logo and Social Icons */
+.footer-logo img {
+    width: 15%;
+    height: auto;
+
+}
+
+.social-icons a {
+    margin-right: 10px;
+    color: #d4af37;
+    text-decoration: none;
+}
+
+/* Footer Sections */
+.footer-links, .footer-services, .footer-newsletter {
+    flex: 1;
+}
+
+.footer-links h3, .footer-services h3, .footer-newsletter h3 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-links ul, .footer-services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li, .footer-services li {
+    margin-bottom: 10px;
+}
+
+.footer-links a, .footer-services a {
+    color: #d4af37;
+    text-decoration: none;
+}
+
+/* Newsletter Form */
+.footer-newsletter form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-newsletter input {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.footer-newsletter button {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #d4af37;
+    color: #2b3130;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width : 768px) {
+
+}
+
+@media only screen and (max-width : 1200px) {
+    .products{
+        top: 200%;
+        width: 75%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .products2{
+        width: 75%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+
+
 
 
 
