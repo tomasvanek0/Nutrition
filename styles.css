@@ -29,8 +29,12 @@
     cursor: pointer;
 }
 
-body{
-    height: 2500px;
+
+main{
+    height: 100%;
+}
+html{
+    height: 100%;
 }
 
 
@@ -41,6 +45,10 @@ body{
 
 body{
     margin:0;
+    padding:0;
+    width:100%;
+    height:140%;
+    position: relative;
 }
 
 .Navbar{
@@ -72,8 +80,6 @@ body{
 
 }
 
-
-
 .nav-links{
     width: 90%;
     background-color: white;
@@ -103,6 +109,7 @@ body{
 }
 .cart img{
     width: 18%;
+    position: relative;
 }
 
 #nav-btn{
@@ -145,7 +152,7 @@ body{
     margin: 20px 0 80px 0;
     position: absolute;
     left: 50%;
-    top: 90%;
+    top: 60%;
     transform: translate(-50%, -50%);
 
 
@@ -208,7 +215,7 @@ body{
     width: 100%;
     height: 65%;
     position: absolute;
-    top: 250%;
+    top: 160%;
 
 }
 
@@ -265,20 +272,19 @@ body{
     padding: 40px;
     font-family: Arial, sans-serif;
     position: absolute;
-    width: 95.25%;
-    top: 310%;
+    width: 95.8%;
+    top: 225%;
 }
 
 .footer-logo{
-    width: 50%;
+    width: 20%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
 }
 
-/* Logo and Social Icons */
 .footer-logo img {
-    width: 15%;
+    width: 50%;
     height: auto;
 
 }
@@ -289,7 +295,6 @@ body{
     text-decoration: none;
 }
 
-/* Footer Sections */
 .footer-links, .footer-services, .footer-newsletter {
     flex: 1;
 }
@@ -302,10 +307,16 @@ body{
 .footer-links ul, .footer-services ul {
     list-style: none;
     padding: 0;
+    color: #d4af37;
 }
 
 .footer-links li, .footer-services li {
     margin-bottom: 10px;
+}
+
+.footer-links li:hover, .footer-services li:hover {
+    color: white;
+    cursor: pointer;
 }
 
 .footer-links a, .footer-services a {
@@ -313,7 +324,6 @@ body{
     text-decoration: none;
 }
 
-/* Newsletter Form */
 .footer-newsletter form {
     display: flex;
     flex-direction: column;
@@ -335,28 +345,145 @@ body{
     cursor: pointer;
 }
 
+.footer-newsletter button:hover {
+    background-color: gray;
+    color: white;
+}
+
+
+
 
 @media only screen and (max-width : 768px) {
+    .logo{
+        width: 0;
+        height: 0;
+    }
 
+    .Navbar{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-links{
+        width: 100%;
+        padding: 10px 0 0 0;
+        flex-direction: column;
+        align-items: center;
+        left: 0;
+        position: absolute;
+
+    }
+    .cart{
+        width: 100%;
+        left: 50%;
+        position: absolute;
+        top: 30%;
+        transform: translateX(-50%);
+
+    }
+
+    .cart img{
+        width: 10%;
+        left: 30%;
+    }
+    #nav-btn{
+        width: 15%;
+        font-size: 12px;
+        left: 70%;
+    }
+
+    .Nadpis{
+        position: absolute;
+        top: 24%;
+    }
+
+    .products{
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px 0 20px 0;
+        position: absolute;
+        left: 50%;
+        top: 90%;
+        transform: translate(-50%, -50%);
+
+    }
 }
 
 @media only screen and (max-width : 1200px) {
     .products{
-        top: 200%;
+        top: 300%;
         width: 75%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        position: absolute;
+
+    }
+    .product{
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: 100px 0 0 0;
 
     }
 
     .products2{
         width: 75%;
+        top: 160%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+
+    .footer{
+        width: 92%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 965%;
+
+    }
+
+    .down-side{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 1000%;
+
+    }
+
+    .down-side h2{
+        font-size: 32px;
+        top: 20%;
+
+    }
+
+    .down-side p{
+        font-size: 12px;
+        top: 40%;
+    }
+    #email2{
+        width: 10%;
+        height: 10%;
+    }
+    #btn1{
+        width: 10%;
+        height: 10%;
+    }
 }
+
+
 
 
 
